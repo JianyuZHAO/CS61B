@@ -31,7 +31,7 @@ public class NBody{
 							double xxVel = in.readDouble();
 							double yyVel = in.readDouble();
 							double mass = in.readDouble();
-							String imgFileName = "images/" + in.readString();
+							String imgFileName = in.readString();
 							p[i] = new Planet(xxPos, yyPos, xxVel, yyVel, mass, imgFileName);
 						}
 					}
